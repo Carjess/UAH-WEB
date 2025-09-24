@@ -53,11 +53,6 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-background/70 hover:text-background transition-colors">
-                  Admisiones
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/70 hover:text-background transition-colors">
                   Estudiantes
                 </a>
               </li>

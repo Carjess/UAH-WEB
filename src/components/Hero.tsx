@@ -1,84 +1,81 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Award, BookOpen } from "lucide-react";
+import { ArrowRight, Users, Award, BookOpen, GraduationCap, Trophy, Calendar } from "lucide-react";
+import universityBg from "@/assets/university-background.jpg";
 
 const Hero = () => {
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-5" />
+      {/* University background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${universityBg})` }}
+      />
+      <div className="absolute inset-0 bg-black/60" />
       
-      <div className="container mx-auto px-4 relative">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center max-w-4xl mx-auto">
           <div className="animate-slide-up">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <Award className="w-4 h-4 mr-2" />
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 text-white text-sm font-medium mb-8">
+              <Award className="w-5 h-5 mr-2" />
               Más de 40 años de excelencia académica
             </div>
             
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-8 text-white">
               Tu futuro profesional comienza en la{" "}
-              <span className="hero-text">UAH</span>
+              <span className="text-primary drop-shadow-lg">UAH</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 max-w-xl">
+            <p className="text-2xl text-white/90 mb-12 max-w-3xl mx-auto">
               Universidad Alejandro de Humboldt: Formamos profesionales 
               integrales con valores, conocimientos y competencias para 
               transformar la sociedad.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button variant="hero" size="lg" className="group">
+            <div className="flex justify-center mb-16">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold group">
                 Conoce nuestras carreras
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg">
-                Proceso de admisión
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">6</div>
-                <div className="text-sm text-muted-foreground">Carreras</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">2</div>
-                <div className="text-sm text-muted-foreground">Sedes</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">40+</div>
-                <div className="text-sm text-muted-foreground">Años</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="lg:text-center animate-float">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-hero rounded-2xl opacity-10 transform rotate-6"></div>
-              <div className="relative bg-card rounded-2xl p-8 shadow-elegant border">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center p-4 rounded-lg bg-primary/5">
-                    <Users className="w-8 h-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-2">Comunidad Estudiantil</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Miles de egresados exitosos
-                    </p>
+            {/* Enhanced Stats Bar */}
+            <div className="bg-black/40 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-3">
+                    <div className="p-3 rounded-full bg-primary/20 border border-primary/30">
+                      <Users className="w-8 h-8 text-primary" />
+                    </div>
                   </div>
-                  <div className="text-center p-4 rounded-lg bg-primary/5">
-                    <BookOpen className="w-8 h-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-2">Educación de Calidad</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Programas actualizados
-                    </p>
+                  <div className="text-4xl font-bold text-white mb-2 animate-pulse">8,500+</div>
+                  <div className="text-sm text-white/70 font-medium">Estudiantes Activos</div>
+                </div>
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-3">
+                    <div className="p-3 rounded-full bg-primary/20 border border-primary/30">
+                      <GraduationCap className="w-8 h-8 text-primary" />
+                    </div>
                   </div>
-                  <div className="col-span-2 text-center p-4 rounded-lg bg-primary/5">
-                    <Award className="w-8 h-8 mx-auto mb-3 text-primary" />
-                    <h3 className="font-semibold mb-2">Reconocimiento Nacional</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Universidad privada líder en Venezuela
-                    </p>
+                  <div className="text-4xl font-bold text-white mb-2 animate-pulse">25,000+</div>
+                  <div className="text-sm text-white/70 font-medium">Egresados Exitosos</div>
+                </div>
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-3">
+                    <div className="p-3 rounded-full bg-primary/20 border border-primary/30">
+                      <Calendar className="w-8 h-8 text-primary" />
+                    </div>
                   </div>
+                  <div className="text-4xl font-bold text-white mb-2 animate-pulse">40+</div>
+                  <div className="text-sm text-white/70 font-medium">Años de Experiencia</div>
+                </div>
+                <div className="text-center">
+                  <div className="flex items-center justify-center mb-3">
+                    <div className="p-3 rounded-full bg-primary/20 border border-primary/30">
+                      <Trophy className="w-8 h-8 text-primary" />
+                    </div>
+                  </div>
+                  <div className="text-4xl font-bold text-white mb-2 animate-pulse">6</div>
+                  <div className="text-sm text-white/70 font-medium">Carreras Profesionales</div>
                 </div>
               </div>
             </div>

@@ -21,26 +21,6 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      {/* Top contact bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center gap-4">
-            <a href="tel:+584241578708" className="flex items-center gap-1 hover:text-primary-glow transition-colors">
-              <Phone size={14} />
-              +58 (424) 157-8708
-            </a>
-            <a href="mailto:informacion@unihumboldt.edu.ve" className="flex items-center gap-1 hover:text-primary-glow transition-colors">
-              <Mail size={14} />
-              informacion@unihumboldt.edu.ve
-            </a>
-          </div>
-          <div className="hidden md:block">
-            <span className="font-medium">Universidad Alejandro de Humboldt</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Main navigation */}
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
@@ -70,9 +50,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button variant="uah" size="sm">
-              Admisiones
-            </Button>
           </nav>
 
           {/* Mobile menu button */}
@@ -102,11 +79,6 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-3 py-2">
-                <Button variant="uah" size="sm" className="w-full">
-                  Admisiones
-                </Button>
-              </div>
             </div>
           </div>
         )}

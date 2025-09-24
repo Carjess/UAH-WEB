@@ -7,6 +7,14 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Clock, Users, Award, BookOpen, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Career images
+import careerMantenimiento from "@/assets/career-mantenimiento.jpg";
+import careerInformatica from "@/assets/career-informatica.jpg";
+import careerAdministracion from "@/assets/career-administracion.jpg";
+import careerContaduria from "@/assets/career-contaduria.jpg";
+import careerPublicidad from "@/assets/career-publicidad.jpg";
+import careerComercio from "@/assets/career-comercio.jpg";
+
 const CareerDetail = () => {
   const { slug } = useParams();
 
@@ -15,6 +23,7 @@ const CareerDetail = () => {
       title: "Ingeniería en Mantenimiento de Obras",
       degree: "Ingeniero en Mantenimiento de Obras",
       duration: "4 años",
+      image: careerMantenimiento,
       description: "La carrera de Ingeniería en Mantenimiento de Obras está enfocada en formar profesionales especializados en la planificación, gestión y ejecución de estrategias para la conservación y rehabilitación de infraestructuras y mantenimiento de equipos electromecánicos.",
       fieldOfWork: "El Ingeniero en Mantenimiento de Obras puede desempañarse en la industria de la construcción, supervisando el mantenimiento de proyectos ya finalizados y garantizando su vida útil, incluyendo el mantenimiento de edificios residenciales y comerciales, grandes proyectos de infraestructura tales como: hospitales, escuelas, puentes, carreteras, túneles, mantenimiento de redes de agua, electricidad, gas, telecomunicaciones, etc.",
       semesters: [
@@ -56,6 +65,7 @@ const CareerDetail = () => {
       title: "Ingeniería en Informática",
       degree: "Ingeniero en Informática",
       duration: "4 años",
+      image: careerInformatica,
       description: "La carrera de Ingeniería en Informática está enfocada en formar profesionales con conocimientos de computación, tecnología y gestión para el desarrollo de soluciones innovadoras. El egresado se especializará en el diseño, implementación y mantenimiento de sistemas informáticos abarcando software, hardware, redes, robótica, seguridad digital y gestión de proyectos.",
       fieldOfWork: "El Ingeniero en Informática podrá desempeñarse en el desarrollo de software, administración de base de datos, ciber seguridad, redes, telecomunicaciones, inteligencia artificial, computación en la nube, automatización y consultoría tecnológica. Puede trabajar en empresas de tecnología, banca, telecomunicaciones, industria, salud o educación.",
       semesters: [
@@ -97,6 +107,7 @@ const CareerDetail = () => {
       title: "Licenciatura en Administración de Empresas",
       degree: "Licenciado en Administración de Empresas",
       duration: "4 años",
+      image: careerAdministracion,
       description: "La carrera de Administración de Empresas esta enfocada en formar profesionales con conocimientos en gestión organizacional, finanzas, mercadeo y recursos humanos. El egresado estará en la capacidad de optimizar procesos contables, elaboración de estados financieros, planificación estratégica y control de procesos.",
       fieldOfWork: "El campo de trabajo abarca la gestión, planificación y optimización de recursos en organizaciones de diversos sectores. Puede desempeñarse en áreas como: gestión empresarial, finanzas, contabilidad, recursos humanos, mercadeo, ventas, emprendimiento y consultoría.",
       semesters: [
@@ -138,6 +149,7 @@ const CareerDetail = () => {
       title: "Licenciatura en Contaduría Pública",
       degree: "Licenciado en Contaduría Pública",
       duration: "4 años",
+      image: careerContaduria,
       description: "La carrera de Contaduría Pública está enfocada en formar profesionales especializados en la gestión financiera, contable y tributaria de organizaciones, con un enfoque en la normativa legal y fiscal del país.",
       fieldOfWork: "El licenciado en Contaduría Pública puede dedicarse al ejercicio de su carrera en la empresa privada, pública o independiente, ejerciendo en las áreas de auditorías, asesorías, consultorías contables y fiscales, docencia e investigación.",
       semesters: [
@@ -179,6 +191,7 @@ const CareerDetail = () => {
       title: "Licenciatura en Publicidad",
       degree: "Licenciado en Publicidad",
       duration: "4 años",
+      image: careerPublicidad,
       description: "La carrera de Publicidad esta enfocada en formar profesionales creativos y estratégicos con conocimientos en comunicación, marketing, diseño y medios digitales. Los egresados estarán capacitados para desarrollar campañas publicitarias, gestionar marcas, analizar el comportamiento del consumidor.",
       fieldOfWork: "El Licenciado en Publicidad estará en capacidad de analizar, diagnosticar, crear, diseñar e implementar todo lo relacionado con la publicidad y el mercadeo. Su campo de acción profesional comprende: trabajar y administrar empresas y/o medios publicitarios tradicionales y no tradicionales.",
       semesters: [
@@ -220,6 +233,7 @@ const CareerDetail = () => {
       title: "Licenciatura en Comercio Internacional",
       degree: "Licenciado en Comercio Internacional",
       duration: "4 años",
+      image: careerComercio,
       description: "La carrera de Comercio Internacional esta enfocada en formar profesionales con conocimientos en economía, negocios, logística y normativas comerciales globales. Al culminar la carrera el egresado podrá analizar, coordinar y ejecutar negociaciones internacionales, procesos de importación y exportación.",
       fieldOfWork: "El licenciado en Comercio Internacional puede trabajar en empresas exportadoras e importadoras; en departamentos de comercio exterior para gestionar operaciones de importación y exportación, empresas de logística, asesoramiento empresarial en temas de estrategia comercial internacional.",
       semesters: [
@@ -269,53 +283,56 @@ const CareerDetail = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        {/* Hero Section */}
-        <section className="py-16 bg-gradient-card">
-          <div className="container mx-auto px-4">
-            <Link to="/" className="inline-flex items-center text-primary hover:text-primary-glow mb-6 transition-colors">
+        {/* Hero Section with Image */}
+        <section className="relative py-20 overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${career.image})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Volver a carreras
             </Link>
             
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2">
-                <Badge variant="secondary" className="mb-4">
+                <Badge variant="outline" className="mb-6 border-primary/50 text-primary bg-black/30">
                   Título Universitario
                 </Badge>
-                <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+                <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white">
                   {career.title}
                 </h1>
-                <p className="text-xl text-muted-foreground mb-6">
+                <p className="text-2xl text-primary font-semibold mb-6">
                   {career.degree}
                 </p>
-                <p className="text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed text-white/90 max-w-2xl">
                   {career.description}
                 </p>
               </div>
 
-              <Card className="h-fit">
+              <Card className="h-fit bg-black/40 backdrop-blur border border-white/20">
                 <CardHeader>
-                  <CardTitle className="flex items-center">
+                  <CardTitle className="flex items-center text-white">
                     <Award className="w-5 h-5 mr-2 text-primary" />
                     Información de la Carrera
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="flex items-center">
+                  <div className="flex items-center text-white/90">
                     <Clock className="w-4 h-4 mr-3 text-primary" />
                     <span>Duración: {career.duration}</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center text-white/90">
                     <BookOpen className="w-4 h-4 mr-3 text-primary" />
                     <span>Modalidad: Presencial</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center text-white/90">
                     <Users className="w-4 h-4 mr-3 text-primary" />
                     <span>Sedes: Valencia y Caracas</span>
                   </div>
-                  <Button variant="uah" className="w-full mt-4">
-                    Solicitar Información
-                  </Button>
                 </CardContent>
               </Card>
             </div>
@@ -335,60 +352,43 @@ const CareerDetail = () => {
         </section>
 
         {/* Study Plan */}
-        <section className="py-16 bg-secondary/30">
+        <section className="py-20 bg-gradient-to-b from-background to-secondary/20">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold mb-12 text-center">
+              <h2 className="text-4xl font-bold mb-16 text-center">
                 Plan de <span className="hero-text">Estudios</span>
               </h2>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {career.semesters.map((semester, index) => (
-                  <Card key={index} className="h-full">
-                    <CardHeader>
-                      <CardTitle className="text-lg text-primary">
-                        {semester.number}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2">
-                        {semester.subjects.map((subject, subIndex) => (
-                          <li key={subIndex} className="flex items-start text-sm">
-                            <CheckCircle className="w-3 h-3 mr-2 mt-1 text-primary flex-shrink-0" />
-                            <span>{subject}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                ))}
+              {/* Black container with red accents */}
+              <div className="bg-foreground rounded-3xl p-8 border-2 border-primary/20 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-primary/50"></div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {career.semesters.map((semester, index) => (
+                    <Card key={index} className="h-full bg-background border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-red">
+                      <CardHeader className="pb-3">
+                        <CardTitle className="text-lg text-primary font-bold">
+                          {semester.number}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <ul className="space-y-3">
+                          {semester.subjects.map((subject, subIndex) => (
+                            <li key={subIndex} className="flex items-start text-sm">
+                              <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></div>
+                              <span className="font-medium">{subject}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">
-                ¿Listo para comenzar tu futuro profesional?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Únete a la Universidad Alejandro de Humboldt y forma parte 
-                de nuestra comunidad de profesionales exitosos.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero" size="lg">
-                  Iniciar Proceso de Admisión
-                </Button>
-                <Button variant="outline" size="lg">
-                  Solicitar Más Información
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

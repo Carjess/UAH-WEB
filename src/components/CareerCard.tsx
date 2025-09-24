@@ -30,28 +30,17 @@ const CareerCard = ({ title, description, duration, icon, slug, fieldOfWork }: C
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-muted-foreground mb-4 line-clamp-3">
-          {description}
-        </p>
         <div className="mb-6">
-          <h4 className="font-medium text-sm mb-2 flex items-center">
-            <Users className="w-4 h-4 mr-2 text-primary" />
-            Campo Laboral:
-          </h4>
-          <p className="text-sm text-muted-foreground line-clamp-2">
-            {fieldOfWork}
-          </p>
+          <Link to={`/carrera/${slug}`}>
+            <Button 
+              variant="outline" 
+              className="w-full group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300"
+            >
+              Ver más
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
-        <Link to={`/carrera/${slug}`}>
-          <Button 
-            variant="outline" 
-            className="w-full group-hover:border-primary group-hover:text-primary transition-all duration-300"
-          >
-            <BookOpen className="w-4 h-4 mr-2" />
-            Ver plan de estudios
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </Link>
       </CardContent>
     </Card>
   );
