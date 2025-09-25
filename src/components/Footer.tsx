@@ -25,13 +25,13 @@ const Footer = () => {
               para transformar la sociedad venezolana.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-background/70 hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/unihumboldt/?locale=es_LA" className="text-background/70 hover:text-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-background/70 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/unihumboldt/?g=5" className="text-background/70 hover:text-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-background/70 hover:text-primary transition-colors">
+              <a href="https://x.com/uah_oficial?lang=es" className="text-background/70 hover:text-primary transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>

@@ -33,7 +33,7 @@ const Header = () => {
               <h1 className="text-lg font-bold text-foreground">
                 Universidad Alejandro de Humboldt
               </h1>
-              <p className="text-xs text-muted-foreground">Excelencia Académica</p>
+             
             </div>
           </Link>
 

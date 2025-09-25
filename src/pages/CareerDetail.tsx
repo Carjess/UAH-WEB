@@ -58,6 +58,14 @@ const CareerDetail = () => {
         {
           number: "OCTAVO SEMESTRE",
           subjects: ["Evaluación de Estructuras", "Rehabilitación de Obras", "Mantenimiento Preventivo", "Práctica Profesional", "Trabajo de Grado"]
+        },
+        {
+          number: "NOVENO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+        },
+        {
+          number: "DÉCIMO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
         }
       ]
     },
@@ -99,6 +107,14 @@ const CareerDetail = () => {
         },
         {
           number: "OCTAVO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+        },
+        {
+          number: "NOVENO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+        },
+        {
+          number: "DÉCIMO SEMESTRE",
           subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
         }
       ]
@@ -142,6 +158,14 @@ const CareerDetail = () => {
         {
           number: "OCTAVO SEMESTRE",
           subjects: ["Trabajo de Grado", "Consultoría Empresarial", "Emprendimiento", "Liderazgo Organizacional", "Taller de Tesis"]
+        },
+        {
+          number: "NOVENO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+        },
+        {
+          number: "DÉCIMO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
         }
       ]
     },
@@ -184,6 +208,14 @@ const CareerDetail = () => {
         {
           number: "OCTAVO SEMESTRE",
           subjects: ["Trabajo de Grado", "Auditoria Interna", "Consultoría Fiscal", "Ética Profesional", "Taller de Tesis"]
+        },
+        {
+          number: "NOVENO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+        },
+        {
+          number: "DÉCIMO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
         }
       ]
     },
@@ -226,6 +258,14 @@ const CareerDetail = () => {
         {
           number: "OCTAVO SEMESTRE",
           subjects: ["Trabajo de Grado", "Gestión de Marcas", "Publicidad Digital", "Emprendimiento Creativo", "Taller de Tesis"]
+        },
+        {
+          number: "NOVENO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+        },
+        {
+          number: "DÉCIMO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
         }
       ]
     },
@@ -268,6 +308,14 @@ const CareerDetail = () => {
         {
           number: "OCTAVO SEMESTRE",
           subjects: ["Trabajo de Grado", "Consultoría Internacional", "Emprendimiento Global", "Gestión de Riesgos Internacionales", "Taller de Tesis"]
+        },
+        {
+          number: "NOVENO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+        },
+        {
+          number: "DÉCIMO SEMESTRE",
+          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
         }
       ]
     }
@@ -285,12 +333,14 @@ const CareerDetail = () => {
       <main>
         {/* Hero Section with Image */}
         <section className="relative py-20 overflow-hidden">
+          
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${career.image})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60" />
-          
+           <div className="container mx-auto px-4 relative z-10"></div>
+           
           <div className="container mx-auto px-4 relative z-10">
             <Link to="/" className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
@@ -333,11 +383,13 @@ const CareerDetail = () => {
                     <Users className="w-4 h-4 mr-3 text-primary" />
                     <span>Sedes: Valencia y Caracas</span>
                   </div>
+                  
                 </CardContent>
               </Card>
             </div>
           </div>
         </section>
+        
 
         {/* Field of Work */}
         <section className="py-16">
@@ -360,13 +412,15 @@ const CareerDetail = () => {
               </h2>
               
               {/* Black container with red accents */}
-              <div className="bg-foreground rounded-3xl p-8 border-2 border-primary/20 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-primary/50"></div>
+              <div className="bg-[#0080ff08] rounded-3xl p-8 border- border-primary/20 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-black/50"></div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {career.semesters.map((semester, index) => (
-                    <Card key={index} className="h-full bg-background border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-red">
+                    <Card key={index} className="h-full border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-red">
+                    
                       <CardHeader className="pb-3">
+                        
                         <CardTitle className="text-lg text-primary font-bold">
                           {semester.number}
                         </CardTitle>
