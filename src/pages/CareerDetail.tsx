@@ -61,11 +61,11 @@ const CareerDetail = () => {
         },
         {
           number: "NOVENO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Administración de Obras", "Seminario Trabajo de Grado", "Ingeniería de Fundaciones", "Pasantía I", "Deterioro y Mant. Concreto Armado", "Construcciones Metálicas" ]
         },
         {
           number: "DÉCIMO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Ética Profesional", "Patología de Estructuras de Concreto Armado", "Planificación, Medición y Control de Mant. de Equipos Electro-Mecánicos", "Pasantía II", "Tecnología de Construcción de Edificios", "Trabajo de grado" ]
         }
       ]
     },
@@ -83,39 +83,39 @@ const CareerDetail = () => {
         },
         {
           number: "SEGUNDO SEMESTRE",
-          subjects: ["Algebra Lineal", "Matemática II", "Formación Cultural II", "Computación II", "Física I", "Metodología de la Investigación II", "Inglés II", "Fundamentos de Economía"]
+          subjects: ["Algebra Lineal", "Matemática II", "Formación Cultural II", "Computación II", "Educación para la Salud", "Metodología de la Investigación II", "Inglés II", "Redacción de Informes Técnicos", "Contabilidad General"]
         },
         {
           number: "TERCER SEMESTRE",
-          subjects: ["Estadística", "Matemática III", "Química", "Programación I", "Física II", "Estructuras Discretas", "Inglés III", "Contabilidad"]
+          subjects: ["Estadística", "Matemática III", "Teoría de Sistema", "Algoritmos y Estructuras I", "Física I", "Estadística I", "Inglés III", "Matemática Discreta"]
         },
         {
           number: "CUARTO SEMESTRE",
-          subjects: ["Matemática IV", "Programación II", "Electrónica Digital", "Arquitectura del Computador", "Base de Datos I", "Ingeniería de Software I"]
+          subjects: ["Matemática IV", "ProLenguaje de Programación I", "Análisis de Sistemas", "Sistemas Operativos I", "Física II", "Estadística II", "Dibujo y Geometría Descriptiva" ]
         },
         {
           number: "QUINTO SEMESTRE",
-          subjects: ["Programación III", "Sistemas Operativos", "Base de Datos II", "Redes I", "Ingeniería de Software II", "Administración I"]
+          subjects: ["Administración de Empresas", "Programación Numérica y No Numérica", "Diseño de Sistemas de Información", "Lenguaje de Programación II", "Estructura Base de Datos", "Investigación de Operaciones", "Circuitos Eléctricos"]
         },
         {
           number: "SEXTO SEMESTRE",
-          subjects: ["Programación IV", "Redes II", "Seguridad Informática", "Inteligencia Artificial", "Administración II", "Desarrollo Web"]
+          subjects: ["Administración de Operaciones", "Teoría de Control", "Ingeniería del Software", "Sistemas Operativos II", "Análisis Numérico", "Circuitos Electrónicos"]
         },
         {
           number: "SÉPTIMO SEMESTRE",
-          subjects: ["Proyecto de Software", "Sistemas Distribuidos", "Robótica", "Computación en la Nube", "Gerencia de Proyectos", "Auditoría de Sistemas"]
+          subjects: ["Administración Sistemas de Información", "Arquitectura del Computador", "Sistemas Digitales", "Desarrollo de Software", "Gerencia Logística", "Computación Gráfica"]
         },
         {
           number: "OCTAVO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Auditoría de Sistemas", "Microprocesadores", "Redes I", "Gerencia de Proyectos", "Teoría de la Comunicación Digital", "Electiva"]
         },
         {
           number: "NOVENO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Sistemas Multimedia", "Seminario Trabajo de Grado", "Robótica y Sistemas Expertos", "Pasantía I", "Redes II", "Electiva", "Electiva" ]
         },
         {
           number: "DÉCIMO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Ética Profesional", "Teleproceso y Teleinformática", "Electiva", "Pasantía II", "Electiva", "Trabajo de grado" ]
         }
       ]
     },
@@ -157,15 +157,15 @@ const CareerDetail = () => {
         },
         {
           number: "OCTAVO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Consultoría Empresarial", "Emprendimiento", "Liderazgo Organizacional", "Taller de Tesis"]
+          subjects: ["Legislación Fiscal", "Comercio Internacional", "Auditoría Administrativa I", "Venezuela Contemporánea", "Sistemas y Procesos Industriales", "Higiene y Seguridad Industrial", "Administración de Ventas"]
         },
         {
           number: "NOVENO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Tecnología de Construcción de Edificios", "Tecnología de Construcción de Edificios", "Auditoría Administrativa II", "Pasantía I", "Diseño y Evaluación de Proyectos", "Electiva", "Mercadotecnia y Publicidad" ]
         },
         {
           number: "DÉCIMO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Ética Profesional", "Electiva", "Evaluación de Empresas", "Pasantía II", "Electiva","Electiva", "Trabajo de grado" ]
         }
       ]
     },
@@ -207,15 +207,15 @@ const CareerDetail = () => {
         },
         {
           number: "OCTAVO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Auditoria Interna", "Consultoría Fiscal", "Ética Profesional", "Taller de Tesis"]
+          subjects: ["Legislación Fiscal", "Comercio Internacional", "Electiva", "Venezuela Contemporánea", "Contabilidad Especializada", "Auditoría I"]
         },
         {
           number: "NOVENO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Legislación Tributaria", "Seminario Trabajo de Grado", "Electiva", "Pasantía I", "Diseño y Evaluación de Proyectos", "Auditoría II" ]
         },
         {
           number: "DÉCIMO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Ética Profesional", "Electiva", "Evaluación de Empresas", "Pasantía II", "Electiva","Auditoría III", "Trabajo de grado" ]
         }
       ]
     },
@@ -257,15 +257,15 @@ const CareerDetail = () => {
         },
         {
           number: "OCTAVO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Gestión de Marcas", "Publicidad Digital", "Emprendimiento Creativo", "Taller de Tesis"]
+          subjects: ["Fotografía Publicitaria", "Comercio Internacional", "Medición de Medios", "Venezuela Contemporánea", "Electiva", "Electiva", "Investigación de Mercados I"]
         },
         {
           number: "NOVENO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Comercialización", "Seminario Trabajo de Grado", "Producción de Impresos Publicitarios", "Cuentas Publicitarias", "Diseño y Evaluación de Proyectos", "Electiva", "Investigación de Mercados II", "Pasantías"]
         },
         {
           number: "DÉCIMO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Ética Profesional", "Publicidad Institucional", "Planificación de Mercadeo", "Diseño Computarizado Publicitario", "Electiva", "Dirección de Mercadeo", "Pasantías", "Trabajo de grado" ]
         }
       ]
     },
@@ -307,15 +307,15 @@ const CareerDetail = () => {
         },
         {
           number: "OCTAVO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Consultoría Internacional", "Emprendimiento Global", "Gestión de Riesgos Internacionales", "Taller de Tesis"]
+          subjects: ["Legislación Fiscal", "Gerencia de Negociación Internacional", "Valoración Aduanera", "Electiva", "Mercados Internacionales", "Finanzas Internacionales", "Integración Económica" ]
         },
         {
           number: "NOVENO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Tec. de Empaques y Embalajes", "Seminario Trabajo de Grado", "Taller de Negociación I", "Pasantía I", "Diseño y Evaluación de Proyectos", "Electiva" ]
         },
         {
           number: "DÉCIMO SEMESTRE",
-          subjects: ["Trabajo de Grado", "Práctica Profesional", "Emprendimiento Tecnológico", "Sistemas Expertos", "Taller de Tesis"]
+          subjects: ["Ética Profesional", "Comercialización Petrolera", "Taller de Negociación II", "Pasantía II", "Electiva","Trabajo de grado" ]
         }
       ]
     }
